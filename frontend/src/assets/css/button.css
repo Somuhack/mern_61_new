@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 4px;
+  /* background-color: rgb(44, 44, 174); */
+  color: rgb(255, 255, 255);
+  transition: background-color .2s, color .2s;
+  outline: 0;
+  border: none;
+  word-break: break-word;
+  margin: 10px;
+}
+.none{
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid black;
+}
