@@ -25,7 +25,11 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Product from "./pages/Product"
+import Register from "./pages/auth/Register"
+import Login from "./pages/auth/Loging"
+import Profile from "./pages/auth/Profile"
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import PrivateRoute from "./security/PrivateRoute"
 const App = () => {
   return (
     <>
@@ -33,8 +37,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/product" element={<Product/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/contact" element={<PrivateRoute><Contact/></PrivateRoute>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/profile" element={<PrivateRoute><Profile/></PrivateRoute>} />
         </Routes>
      </BrowserRouter>
     </>

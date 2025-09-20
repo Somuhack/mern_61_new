@@ -2,7 +2,14 @@ import React from 'react'
 import MainLayout from '../Layout/MainLayout'
 const Product = () => {
   return (
-    <MainLayout>Product</MainLayout>
+    <MainLayout>
+  <div>
+    <h1>
+      This is My Product page
+    </h1>
+  </div>
+
+    </MainLayout>
   )
 }
 
